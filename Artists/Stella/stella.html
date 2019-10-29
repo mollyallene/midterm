@@ -1,0 +1,127 @@
+<html>
+<head>
+	 <title>Home</title>
+	 <link href="../../style.css" rel="stylesheet" type="text/css">
+   <style> 
+
+    .intro {
+      text-align: center;
+      font-family: Copperplate-Light, Avenir Next, Georgia;
+      color: #fff;
+      font-size: 23px;
+    }
+	   body{
+		   margin: 20px;
+	   }
+    .box {
+      position: relative;
+      margin-left: 30%;
+      justify-content: right;
+      width: 80%;
+      height: 100%;
+    }
+
+    .box .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10 10px;
+      justify-content: center;
+      align-items: right;
+    }
+
+
+    /* Create four equal columns that sits next to each other */
+    .box .col {
+      flex: 25%;
+      max-width: 25%;
+      padding: 10 10px;
+    }
+
+    .box .col img {
+      margin-top: 20px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .box .col {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .box .col {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .biography {
+      position: relative;
+      color: #fff;
+      font-family: Copperplate-Light, Avenir Next, Georgia;
+      align-content: left;
+      width:40%;
+      text-align: left;
+      top: -77%;
+      font-size: 18px;
+    }
+
+   </style>
+	 <script src="https://kit.fontawesome.com/668579f86e.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+
+  <div class="intro">
+    <h1>Frank Stella</h1>
+  </div>
+
+ <nav class="navbar">
+    <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+        <i class="fas fa-bars"></i>
+    </label>
+    <a href="./../homepage.html" class="logo">Deck Pics</a>
+    <input type="checkbox" id="chkToggle"></input>
+    <ul class="main-nav">
+      <li><a href="./../../homepage.html" class="nav-links">Home</a></li>
+      <li><a href="./../../About/about.html" class="nav-links">About</a></li>
+      <li><a href="./../../homepage.html" class="nav-links">Shop</a></li>
+      <li><a href="./../artists.html" class="nav-links">Artists</a></li>
+      <li><a href="./../../Contact/contact.html" class="nav-links">Contact</a></li>
+      <li><a href="./../../homepage.html" class="nav-links"> <i class="fas fa-shopping-cart"></i></a></li>
+    </ul>
+  </nav>
+
+  <div class="box">
+  <div class="row">
+    <div class="col">
+      <img src="portrait.jpg" alt="portrait">
+      <img src="stella1.jpg" alt="stella1">
+      <img src="stella2.jpg" alt="stella2">
+    </div>
+    <div class="col">
+      <img src="stella3.jpg" alt="stella3">
+      <img src="stella4.jpg" alt="stella4">
+      <img src="stella5.jpg" alt="stella5">
+    </div>
+  </div>
+  </div>
+
+  <div class="biography">
+   <p>In 1959, Frank Stella gained early, immediate recognition with his series of coolly impersonal black striped paintings that turned the gestural brushwork and existential angst of Abstract Expressionism on its head. Focusing on the formal elements of art-making, Stella went on to create increasingly complicated work that seemed to follow a natural progression of dynamism, tactility, and scale: first, by expanding his initial monochrome palette to bright colors, and, later, moving painting into the third dimension through the incorporation of other, non-painterly elements onto the canvas. He ultimately went on to create large-scale freestanding sculptures, architectural structures, and the most complex work ever realized in the medium of printmaking. Stella's virtually relentless experimentation has made him a key figure in American modernism, helping give rise to such developments as Minimalism, Post-Painterly Abstraction, and Color Field Painting.</p>
+
+   <p>Frank Stella is an American artist best known for his use of geometric patterns and shapes in creating both paintings and sculptures. Arguably one of the most influential living American artists, Stella’s works utilize the formal properties of shape, color, and composition to explore non-literary narratives, as seen in his work Harrar II (1967) from the Protractor series. “Abstraction didn't have to be limited to a kind of rectilinear geometry or even a simple curve geometry. It could have a geometry that had a narrative impact. In other words, you could tell a story with the shapes,” he explained. “It wouldn't be a literal story, but the shapes and the interaction of the shapes and colors would give you a narrative sense. You could have a sense of an abstract piece flowing along and being part of an action or activity.”</p>
+
+   <p>Born on May 12, 1936 in Malden, MA, Stella went on to study history at Princeton University before moving to New York in 1958. Having moved to the city, Stella was immersed in the heyday Abstract Expressionism, but it was the work of Jasper Johns that inspired Stella’s Black Paintings of 1958-1960. These flatly painted, austere works, helped open up the doors to Minimalism. Through the following decades, Stella gained traction in the art world and in 1970 he became the youngest artist ever to be granted a solo exhibition at The Museum of Modern Art.</p>
+
+   
+  </div>
+
+
+
+</body>
+</html>

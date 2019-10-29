@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<title>Home</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="https://kit.fontawesome.com/668579f86e.js" crossorigin="anonymous"></script>
+
+	<style>
+		img{
+			border-radius: 8px;
+			border: 2px solid #D9D9D9;
+			height: 470px;
+		}
+
+		input[type=text]{
+			width: 100%;
+		}
+
+		input[type=text], select, textarea{
+			width: 100%;
+			padding: 12px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		label {
+			padding: 12px 12px 12px 0;
+			display: inline-block;
+		}
+
+		.row .submit1{
+			background-color: #1125F0;
+			color: #fff;
+			padding: 12px 20px;
+			border: none;
+			float: right;
+			border-radius: 6px;
+		}
+
+		.container {
+			background-color: #fff;
+			border: 1px solid #D9D9D9;
+			border-radius: 6px;
+			padding: 20px;
+			width: 50%;
+			margin: auto;
+		}
+
+		.col1 {
+			float: left;
+			width: 20%;
+			margin-top: 6px;
+		}
+
+		.col2 {
+			float: left;
+			width: 80%;
+			margin-top: 6px;
+		}
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+
+		h1{
+			padding-bottom: 10px;
+			color: #fff;
+			text-align: center;
+		}
+
+		.container2{
+			width: 50%;
+			margin: auto;
+		}
+
+		h3{
+			color: #fff;
+			font-weight: 300;
+		}
+
+		body {
+			margin-top: 80px;
+  			padding: 30px;
+		}
+
+	</style>
+	
+</head>
+	
+<body> 
+
+	<nav class="navbar">
+	  <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+	      <i class="fas fa-bars"></i>
+	  </label>
+	  <a href="./../homepage.html" class="logo">Deck Pics</a>
+	  <input type="checkbox" id="chkToggle"></input>
+	  <ul class="main-nav">
+	    <li><a href="./homepage.html" class="nav-links">Home</a></li>
+	    <li><a href="./About/about.html" class="nav-links">About</a></li>
+	    <li><a href="./Shop/shop.html" class="nav-links">Shop</a></li>
+	    <li><a href="./Artists/artists.html" class="nav-links">Artists</a></li>
+	    <li><a href="contact.html" class="nav-links">Contact</a></li>
+	  </ul>
+	</nav>
+
+	<h1>Contact Us</h1>
+	<div class="container">
+	 	 <form action="action_page.php">
+			<div class="row">
+				<div class="col1">
+					<label for="fname">First Name:</label>
+				</div>
+				<div class="col2">
+					<input type="text" id="fname" name="firstname" placeholder="First name..">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col1">
+					<label for="lname">Last Name:</label>
+				</div>
+				<div class="col2">
+					<input type="text" id="lname" name="lastname" placeholder="Last name..">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col1">
+					<label for="subject">Subject:</label>
+				</div>
+				<div class="col2">
+					<textarea id="subject" name="subject" placeholder="Write something.." style="height:100px;"></textarea>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col1">
+					<label class="upload" for="upload">Upload Photo:</label>
+				</div>
+				<div class="col2">
+					<input type="file" id="myfile" value="Choose file">
+				</div>
+			</div>
+
+			<div class="row">
+				<button class="submit1" type="reset" id="buttonID" value="Submit" onclick="myFunc()">Submit</button>
+			</div>
+	  	</form>
+	</div>
+	<div class="container2">
+		<br>
+		<br>
+		<h1>Reach us at...</h1>
+		<h3>(823) 403 8736</h3>
+		<h3>405 Boston Ave., Medford, MA, 02155</h3>
+		<img src="map.jpeg" alt="map">
+	</div>	
+
+</body>
+	<script language="javascript">
+		function myFunc(){
+			var firstName = document.getElementById("fname").value;
+			var lastName = document.getElementById("lname").value;
+			var subject = document.getElementById("subject").value;
+			var photo = document.getElementById("myfile").value;
+			alert(firstName + " " + lastName + " " + subject + " " + photo);
+		}
+	</script>
+</html>

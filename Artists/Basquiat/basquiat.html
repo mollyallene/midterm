@@ -1,0 +1,130 @@
+<html>
+<head>
+	 <title>Home</title>
+	 <link href="../../style.css" rel="stylesheet" type="text/css">
+   <style> 
+
+    .intro {
+      text-align: center;
+      font-family: Copperplate-Light, Avenir Next, Georgia;
+      color: #fff;
+      font-size: 23px;
+    }
+
+	body{
+		   margin: 20px;
+	   }
+	   
+    .box {
+      position: relative;
+      margin-left: 30%;
+      justify-content: right;
+      width: 80%;
+      height: 100%;
+    }
+
+    .box .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10 10px;
+      justify-content: center;
+      align-items: right;
+    }
+
+
+    /* Create four equal columns that sits next to each other */
+    .box .col {
+      flex: 25%;
+      max-width: 25%;
+      padding: 10 10px;
+    }
+
+    .box .col img {
+      margin-top: 20px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .box .col {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .box .col {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .biography {
+      position: relative;
+      color: #fff;
+      font-family: Copperplate-Light, Avenir Next, Georgia;
+      align-content: left;
+      width:40%;
+      text-align: left;
+      top: -77%;
+      font-size: 18px;
+    }
+
+   </style>
+	 <script src="https://kit.fontawesome.com/668579f86e.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+
+  <div class="intro">
+    <h1>Basquiat</h1>
+  </div>
+
+	 <nav class="navbar">
+    <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+        <i class="fas fa-bars"></i>
+    </label>
+    <a href="./../homepage.html" class="logo">Deck Pics</a>
+    <input type="checkbox" id="chkToggle"></input>
+    <ul class="main-nav">
+      <li><a href="./../../homepage.html" class="nav-links">Home</a></li>
+      <li><a href="./../../About/about.html" class="nav-links">About</a></li>
+      <li><a href="./../../homepage.html" class="nav-links">Shop</a></li>
+      <li><a href="./../artists.html" class="nav-links">Artists</a></li>
+      <li><a href="./../../Contact/contact.html" class="nav-links">Contact</a></li>
+      <li><a href="./../../homepage.html" class="nav-links"> <i class="fas fa-shopping-cart"></i></a></li>
+    </ul>
+  </nav>
+  
+  <div class="box">
+  <div class="row">
+    <div class="col">
+      <img src="portrait.jpg" alt="portrait">
+      <img src="basquiat1.jpg" alt="basquiat1">
+      <img src="basquiat2.jpg" alt="basquiat2">
+    </div>
+    <div class="col">
+      <img src="basquiat3.jpg" alt="basquiat3">
+      <img src="basquiat4.jpg" alt="basquiat4">
+      <img src="basquiat5.jpg" alt="basquiat5">
+    </div>
+  </div>
+  </div>
+
+  <div class="biography">
+   <p>Jean-Michel Basquiat (December 22, 1960 – August 12, 1988) was an American artist of Haitian and Puerto Rican descent. Basquiat first achieved fame as part of SAMO, an informal graffiti duo who wrote enigmatic epigrams in the cultural hotbed of the Lower East Side of Manhattan during the late 1970s, where rap, punk, and street art coalesced into early hip-hop music culture. By the 1980s, his neo-expressionist paintings were being exhibited in galleries and museums internationally. The Whitney Museum of American Art held a retrospective of his art in 1992.</p>
+
+<p>Basquiat's art focused on dichotomies such as wealth versus poverty, integration versus segregation, and inner versus outer experience. He appropriated poetry, drawing, and painting, and married text and image, abstraction, figuration, and historical information mixed with contemporary critique.</p>
+
+<p>Basquiat used social commentary in his paintings as a tool for introspection and for identifying with his experiences in the black community of his time, as well as attacks on power structures and systems of racism. Basquiat's visual poetics were acutely political and direct in their criticism of colonialism and support for class struggle. He died of a heroin overdose at his art studio at the age of 27. On May 18, 2017, at a Sotheby's auction, a 1982 painting by Basquiat depicting a black skull with red and black rivulets (Untitled) set a new record high for any American artist at auction, selling for $110.5 million. Basquiat's art has inspired many in the hip hop music community such as Jay-Z.</p>
+
+<p>Basquiat's art focused on recurrent "suggestive dichotomies", such as wealth versus poverty, integration versus segregation, and inner versus outer experience. A middle period from late 1982 to 1985 featured multi-panel paintings and individual canvases with exposed stretcher bars, the surface dense with writing, collage and imagery. The years 1984–85 were also the main period of the Basquiat–Warhol collaborations, even if, in general, they were not very well received by the critics. A major reference source used by Basquiat throughout his career was the book Gray's Anatomy, which his mother had given him while he was in the hospital aged seven. It remained influential in his depictions of internal human anatomy, and in its mixture of image and text. Other major sources were Henry Dreyfuss' Symbol Sourcebook, Leonardo da Vinci's notebooks, and Burchard Brentjes' African Rock Art.</p>
+   
+  </div>
+
+
+
+</body>
+</html>

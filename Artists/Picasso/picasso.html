@@ -1,0 +1,129 @@
+<html>
+<head>
+	 <title>Home</title>
+	 <link href="../../style.css" rel="stylesheet" type="text/css">
+   <style> 
+
+    .intro {
+      text-align: center;
+      font-family: Copperplate-Light, Avenir Next, Georgia;
+      color: #fff;
+      font-size: 23px;
+    }
+
+	   body{
+		   margin: 20px;
+	   }
+    .box {
+      position: relative;
+      margin-left: 30%;
+      justify-content: right;
+      width: 80%;
+      height: 100%;
+    }
+
+    .box .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10 10px;
+      justify-content: center;
+      align-items: right;
+    }
+
+
+    /* Create four equal columns that sits next to each other */
+    .box .col {
+      flex: 25%;
+      max-width: 25%;
+      padding: 10 10px;
+    }
+
+    .box .col img {
+      margin-top: 20px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .box .col {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .box .col {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .biography {
+      position: relative;
+      color: #fff;
+      font-family: Copperplate-Light, Avenir Next, Georgia;
+      align-content: left;
+      width:40%;
+      text-align: left;
+      top: -77%;
+      font-size: 18px;
+    }
+
+   </style>
+	 <script src="https://kit.fontawesome.com/668579f86e.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+
+  <div class="intro">
+    <h1>Pablo Picasso</h1>
+  </div>
+
+ <nav class="navbar">
+    <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+        <i class="fas fa-bars"></i>
+    </label>
+    <a href="./../homepage.html" class="logo">Deck Pics</a>
+    <input type="checkbox" id="chkToggle"></input>
+    <ul class="main-nav">
+      <li><a href="./../../homepage.html" class="nav-links">Home</a></li>
+      <li><a href="./../../About/about.html" class="nav-links">About</a></li>
+      <li><a href="./../../homepage.html" class="nav-links">Shop</a></li>
+      <li><a href="./../artists.html" class="nav-links">Artists</a></li>
+      <li><a href="./../../Contact/contact.html" class="nav-links">Contact</a></li>
+      <li><a href="./../../homepage.html" class="nav-links"> <i class="fas fa-shopping-cart"></i></a></li>
+    </ul>
+  </nav>
+
+  <div class="box">
+  <div class="row">
+    <div class="col">
+      <img src="portrait.jpg" alt="portrait">
+      <img src="picasso1.jpg" alt="picasso1">
+      <img src="picasso2.jpg" alt="picasso2">
+    </div>
+    <div class="col">
+      <img src="picasso3.jpg" alt="piccasso3">
+      <img src="picasso4.jpg" alt="picasso4">
+      <img src="picasso5.jpg" alt="picasso5">
+    </div>
+  </div>
+  </div>
+
+  <div class="biography">
+   <p>Pablo Ruiz Picasso (25 October 1881 – 8 April 1973) was a Spanish painter, sculptor, printmaker, ceramicist, stage designer, poet and playwright who spent most of his adult life in France. Regarded as one of the most influential artists of the 20th century, he is known for co-founding the Cubist movement, the invention of constructed sculpture, the co-invention of collage, and for the wide variety of styles that he helped develop and explore. Among his most famous works are the proto-Cubist Les Demoiselles d'Avignon (1907), and Guernica (1937), a dramatic portrayal of the bombing of Guernica by the German and Italian airforces during the Spanish Civil War.</p>
+
+<p>Picasso demonstrated extraordinary artistic talent in his early years, painting in a naturalistic manner through his childhood and adolescence. During the first decade of the 20th century, his style changed as he experimented with different theories, techniques, and ideas. After 1906, the Fauvist work of the slightly older artist Henri Matisse motivated Picasso to explore more radical styles, beginning a fruitful rivalry between the two artists, who subsequently were often paired by critics as the leaders of modern art.</p>
+
+<p>Picasso's work is often categorized into periods. While the names of many of his later periods are debated, the most commonly accepted periods in his work are the Blue Period (1901–1904), the Rose Period (1904–1906), the African-influenced Period (1907–1909), Analytic Cubism (1909–1912), and Synthetic Cubism (1912–1919), also referred to as the Crystal period. Much of Picasso's work of the late 1910s and early 1920s is in a neoclassical style, and his work in the mid-1920s often has characteristics of Surrealism. His later work often combines elements of his earlier styles.</p>
+
+<p>Exceptionally prolific throughout the course of his long life, Picasso achieved universal renown and immense fortune for his revolutionary artistic accomplishments, and became one of the best-known figures in 20th-century art.</p>
+   
+  </div>
+
+
+
+</body>
+</html>

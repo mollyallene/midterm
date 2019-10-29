@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+
+<head>
+<script src="jquery-3.4.1.js"></script>
+	 <title>Artists</title>
+	 <link href="./../style.css" rel="stylesheet" type="text/css">
+   <style>
+
+    body {
+      margin-top: 80px;
+      padding: 30px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #5F6769;
+    }
+
+    .box {
+		margin-left: 30.5%;
+      	justify-content: center;
+		margin: auto;
+		width: 100%;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .box .col {
+		flex: 25%;
+		max-width: 67%;
+      	padding: 20 20px;
+		
+    }
+
+    .box .col img {
+      	margin-top: 20px;
+		vertical-align: middle;
+    }
+
+	button{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-right: 30px;
+		padding: 10px 20px;
+		background-color: #fff;
+		color: #1125F0;
+		border: #1125F0 solid 1px;
+		border-radius: 6px;
+		margin: auto;
+	 }
+	   
+	button:hover{
+		background-color: #AFCEFF;
+	}   
+	   
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .box .col {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .box .col {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .intro {
+     
+      font-family: Copperplate-Light, Avenir Next, Georgia;
+      font-size: 23px;
+    }
+
+   </style>
+<script src="https://kit.fontawesome.com/668579f86e.js" crossorigin="anonymous"></script>
+</head>
+<body> 	
+<script>
+	//jquery
+	$(document).ready(function () {
+        var small={width: "500px",height: "500px"};
+        var large={width: "1000px",height: "1000px"};
+        var count=1; 
+        $("#img1").css(small).on('click',function () { 
+            $(this).animate((count==1)?large:small);
+            count = 1-count;
+        });
+		$("#img2").css(small).on('click',function () { 
+            $(this).animate((count==1)?large:small);
+            count = 1-count;
+        });
+		$("#img3").css(small).on('click',function () { 
+            $(this).animate((count==1)?large:small);
+            count = 1-count;
+        });
+		$("#img4").css(small).on('click',function () { 
+            $(this).animate((count==1)?large:small);
+            count = 1-count;
+        });
+    });
+</script>
+
+  <div class="intro">
+    <h1>Fall 2019 Collection</h1>
+  </div>
+
+ <nav class="navbar">
+	<label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+		<i class="fas fa-bars"></i>
+	</label>
+	<a href="./../homepage.html" class="logo">Deck Pics</a>
+	<input type="checkbox" id="chkToggle">
+	<ul class="main-nav">
+		<li><a href="./../homepage.html" class="nav-links">Home</a></li>
+		<li><a href="./../About/about.html" class="nav-links">About</a></li>
+		<li><a href="./../Shop/shop.html" class="nav-links">Shop</a></li>
+		<li><a href="./../Artists/artists.html" class="nav-links">Artists</a></li>
+		<li><a href="./../contact.html" class="nav-links">Contact</a></li>
+	</ul>
+</nav>
+<div class="box">
+	<div class="row">
+		  <div class="col">
+			  	<img id="img1" class="small" src="1.jpg" alt="warhol">
+			   	<div class="Overlay">
+					<button type="button" value="Add to cart">Add to Cart</button>
+			  	</div>
+			  	<img id="img2" class="small" src="2.jpg" alt="picassopic">
+				<div class="Overlay">
+					<button type="button"  value="Add to cart">Add to Cart</button>
+			  	</div> 
+			  	<img id="img3" class="small" src="3.jpg" alt="banksypic">
+				<div class="Overlay">
+					<button type="button"  value="Add to cart">Add to Cart</button>
+			  	</div>
+			  	<img id="img4" class="small" src="4.jpg" alt="koons">
+				<div class="Overlay">
+					<button type="button"  value="Add to cart">Add to Cart</button>
+			  	</div>
+		  </div>
+	</div>
+</div>
+</body>
+</html>

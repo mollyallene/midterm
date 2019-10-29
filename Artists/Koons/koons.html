@@ -1,0 +1,129 @@
+<html>
+<head>
+	 <title>Home</title>
+	 <link href="../../style.css" rel="stylesheet" type="text/css">
+   <style> 
+
+    .intro {
+      text-align: center;
+      font-family: Copperplate-Light, Avenir Next, Georgia;
+      color: #fff;
+      font-size: 23px;
+    }
+	 body{
+		   margin: 20px;
+	   }
+    .box {
+      position: relative;
+      margin-left: 30%;
+      justify-content: right;
+      width: 80%;
+      height: 100%;
+    }
+
+    .box .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10 10px;
+      justify-content: center;
+      align-items: right;
+    }
+
+
+    /* Create four equal columns that sits next to each other */
+    .box .col {
+      flex: 25%;
+      max-width: 25%;
+      padding: 10 10px;
+    }
+
+    .box .col img {
+      margin-top: 20px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .box .col {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .box .col {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .biography {
+      position: relative;
+      color: #fff;
+      font-family: Copperplate-Light, Avenir Next, Georgia;
+      align-content: left;
+      width:40%;
+      text-align: left;
+      top: -77%;
+      font-size: 18px;
+    }
+
+   </style>
+	 <script src="https://kit.fontawesome.com/668579f86e.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+
+  <div class="intro">
+    <h1>Jeff Koons</h1>
+  </div>
+
+ <nav class="navbar">
+    <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+        <i class="fas fa-bars"></i>
+    </label>
+    <a href="./../homepage.html" class="logo">Deck Pics</a>
+    <input type="checkbox" id="chkToggle">
+    <ul class="main-nav">
+      <li><a href="./../../homepage.html" class="nav-links">Home</a></li>
+      <li><a href="./../../About/about.html" class="nav-links">About</a></li>
+      <li><a href="./../../homepage.html" class="nav-links">Shop</a></li>
+      <li><a href="./../artists.html" class="nav-links">Artists</a></li>
+      <li><a href="./../../Contact/contact.html" class="nav-links">Contact</a></li>
+      <li><a href="./../../homepage.html" class="nav-links"> <i class="fas fa-shopping-cart"></i></a></li>
+    </ul>
+  </nav>
+
+  <div class="box">
+  <div class="row">
+    <div class="col">
+      <img src="portrait.jpg" alt="portrait">
+      <img src="koons1.jpg" alt="koons1">
+      <img src="koons2.jpg" alt="koons2">
+    </div>
+    <div class="col">
+      <img src="koons3.jpg" alt="koons3">
+      <img src="koons4.jpg" alt="koons4">
+      <img src="koons5.jpg" alt="koons5">
+    </div>
+  </div>
+  </div>
+
+  <div class="biography">
+   <p>Jeffrey Koons (born January 21, 1955) is an American artist recognized for his work dealing with popular culture and his sculptures depicting everyday objects, including balloon animals — produced in stainless steel with mirror-finish surfaces. He lives and works in both New York City and his hometown of York, Pennsylvania.</p>
+
+   <p>Jeff Koons rose to prominence in the mid-1980s as part of a generation of artists exploring the meaning of art and spectacle in a media-saturated era. With his stated artistic intention to “communicate with the masses,” Koons makes use of conceptual constructs—including the ancient, the everyday, and the sublime—creating luxurious icons and elaborate tableaux, which, beneath their captivating exteriors, engage the viewer in a metaphysical dialogue with cultural history.</p>
+
+   <p>During the mid-1990s, Koons expanded his Pop sensibility through the Celebration series (1994–): hyperrealistic, brightly colored paintings and large-scale sculptures depicting vernacular images and forms such as plastic figurines, Play-Doh, and jewelry. Conflating the readymade and the monumental, these works attest to Koons’s ongoing fascination with childlike consciousness and communication; transforming humble objects into abstract symbols of transcendence and the biological. In 2000, seven new works by Koons debuted at the Deutsche Guggenheim: the Easyfun-Ethereal paintings. Derived from the optimistic, colorful Easyfun series (1999–2000), these layered, collage-like tableaux depict cut-out photographs of packaged foods, paradisiacal landscapes, and fragments of women’s faces, limbs, hair, clothing, and accessories. Attesting to Koons’s interest in the simple pleasures of visual culture, Easyfun-Ethereal would eventually be expanded to twenty-four paintings, presenting uncanny, imaginative panoramas.</p>
+
+   <p>Critics are sharply divided in their views of Koons. Some view his work as pioneering and of major art-historical importance. Others dismiss his work as kitsch, crass, and based on cynical self-merchandising. Koons has stated that there are no hidden meanings in his works, nor any critiques.</p>
+
+   
+  </div>
+
+
+
+</body>
+</html>

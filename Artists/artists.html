@@ -1,0 +1,137 @@
+<html>
+<head>
+	 <title>Artists</title>
+	 <link href="./../style.css" rel="stylesheet" type="text/css">
+   <style>
+
+    body {
+      margin-top: 80px;
+      padding: 30px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #5F6769;
+    }
+
+    .box {
+      margin-left: 4.5%;
+    }
+
+    .box .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    /* Create four equal columns that sits next to each other */
+    .box .col {
+      flex: 25%;
+      max-width: 25%;
+      padding: 20 20px;
+    }
+
+    .box .col img {
+      margin-top: 20px;
+      vertical-align: middle;
+    }
+
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .box .col {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .box .col {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .intro {
+      text-align: center;
+      font-family: Copperplate-Light, Avenir Next, Georgia;
+      font-size: 23px;
+    }
+
+
+    .Overlay {
+      position: absolute;
+      margin-top: 20px;
+      background-color: #ffffff;
+      border: 1px solid black;
+      opacity: 0;
+      z-index: 50; 
+      width: 256px;
+      height: 256px;
+    }
+
+    .Overlay p {
+      position: relative;
+      text-align: center;
+      top: 40%;
+      bottom: 60%;
+      font-weight: bold;
+      font-family: Copperplate-Light, Avenir Next, Georgia;
+      color: #5F6769;
+    }
+
+    .Overlay:hover {
+      opacity: 0.7;
+    }
+
+
+   </style>
+	 <script src="https://kit.fontawesome.com/668579f86e.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+
+  <div class="intro">
+    <h1>Our Artists</h1>
+  </div>
+
+ <nav class="navbar">
+  <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+      <i class="fas fa-bars"></i>
+  </label>
+  <a href="./../homepage.html" class="logo">Deck Pics</a>
+  <input type="checkbox" id="chkToggle"></input>
+  <ul class="main-nav">
+    <li><a href="./../homepage.html" class="nav-links">Home</a></li>
+    <li><a href="./../About/about.html" class="nav-links">About</a></li>
+    <li><a href="./../Shop/shop.html" class="nav-links">Shop</a></li>
+    <li><a href="artists.html" class="nav-links">Artists</a></li>
+    <li><a href="./../contact.html" class="nav-links">Contact</a></li>
+  </ul>
+</nav>
+
+
+  <div class="box">
+  <div class="row">
+    <div class="col">
+      <div class="Overlay"><p><a href="./Warhol/warhol.html">ANDY WARHOL</a></p></div> <img src="warhol.jpg" alt="warholpic">
+      <div class="Overlay"><p><a href="./Picasso/picasso.html">PABLO PICASSO</a></p></div> <img src="picasso.jpg" alt="picassopic">
+      <div class="Overlay"><p><a href="./Banksy/banksy.html">BANKSY</a></p></div><img src="banksy.jpg" alt="banksypic">
+      <div class="Overlay"><p><a href="./Koons/koons.html">JEFF KOONS</a></p></div><img src="koons.jpg" alt="koonspic">
+    </div>
+    <div class="col">
+      <div class="Overlay"><p><a href="./Haring/haring.html">KEITH HARING</a></p></div><img src="haring.jpg" alt="haringpic">
+      <div class="Overlay"><p><a href="./Basquiat/basquiat.html">BASQUIAT</a></p></div><img src="basquiat.jpg" alt="basquiatpic">
+      <div class="Overlay"><p><a href="./Stella/stella.html">FRANK STELLA</a></p></div><img src="stella.jpg" alt="stellapic">
+    </div>
+  </div>
+  </div>
+
+
+
+
+</body>
+</html>

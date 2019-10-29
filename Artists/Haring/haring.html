@@ -1,0 +1,129 @@
+<html>
+<head>
+	 <title>Home</title>
+	 <link href="../../style.css" rel="stylesheet" type="text/css">
+   <style> 
+
+    .intro {
+      text-align: center;
+      font-family: Copperplate-Light, Avenir Next, Georgia;
+      color: #fff;
+      font-size: 23px;
+    }
+
+	   body{
+		   margin: 20px;
+	   }
+    .box {
+      position: relative;
+      margin-left: 30%;
+      justify-content: right;
+      width: 80%;
+      height: 100%;
+    }
+
+    .box .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10 10px;
+      justify-content: center;
+      align-items: right;
+    }
+
+
+    /* Create four equal columns that sits next to each other */
+    .box .col {
+      flex: 25%;
+      max-width: 25%;
+      padding: 10 10px;
+    }
+
+    .box .col img {
+      margin-top: 20px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .box .col {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .box .col {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .biography {
+      position: relative;
+      color: #fff;
+      font-family: Copperplate-Light, Avenir Next, Georgia;
+      align-content: left;
+      width:40%;
+      text-align: left;
+      top: -77%;
+      font-size: 18px;
+    }
+
+   </style>
+	 <script src="https://kit.fontawesome.com/668579f86e.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+
+  <div class="intro">
+    <h1>Keith Haring</h1>
+  </div>
+
+   <nav class="navbar">
+    <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+        <i class="fas fa-bars"></i>
+    </label>
+    <a href="./../homepage.html" class="logo">Deck Pics</a>
+    <input type="checkbox" id="chkToggle"></input>
+    <ul class="main-nav">
+      <li><a href="./../../homepage.html" class="nav-links">Home</a></li>
+      <li><a href="./../../About/about.html" class="nav-links">About</a></li>
+      <li><a href="./../../homepage.html" class="nav-links">Shop</a></li>
+      <li><a href="./../artists.html" class="nav-links">Artists</a></li>
+      <li><a href="./../../Contact/contact.html" class="nav-links">Contact</a></li>
+      <li><a href="./../../homepage.html" class="nav-links"> <i class="fas fa-shopping-cart"></i></a></li>
+    </ul>
+  </nav>
+
+  <div class="box">
+  <div class="row">
+    <div class="col">
+      <img src="haring2.jpg" alt="portrait">
+      <img src="haring1.jpg" alt="haring1">
+      <img src="haring6.jpg" alt="haring6">
+    </div>
+    <div class="col">
+      <img src="haring3.jpg" alt="haring3">
+      <img src="haring4.jpg" alt="haring4">
+      <img src="haring5.jpg" alt="haring5">
+    </div>
+  </div>
+  </div>
+
+  <div class="biography">
+    <p>Keith Allen Haring (May 4, 1958 – February 16, 1990) was an American artist whose pop art and graffiti-like work grew out of the New York City street culture of the 1980s.</p>
+
+    <p>Haring's work grew to popularity from his spontaneous drawings in New York City subways—chalk outlines of figures, dogs, and other stylized images-on blank black advertising-space backgrounds. After public recognition he created larger scale works, such as colorful murals, many of them commissioned. His imagery has "become a widely recognized visual language". His later work often addressed political and societal themes—especially homosexuality and AIDS—through his own iconography.</p>
+
+    <p>His classic colourful figures have become an iconic symbol in popular culture, instantly recognisable to many even if they don’t know the name of Keith Haring. While many of his colourful figures have instant commercial appeal, much of the work of Keith Haring revolved around themes of politics, sexuality, war, religion and AIDS, largely in response to the street culture Haring experienced in New York City. As with many street art legends, Keith Haring first took to the streets where he became known for his chalk drawings in subway stations and his iconic street art during the early 1980’s, some his most famous works being the Bowery Wall mural and his legendary Crack is Wack mural. </p>
+
+    <p>The rise to international stardom was rapid for Keith Haring, but also brought extra pressures, such as his subway art being stolen soon after completion and then turning up for sale, a problem that re-emerged with the street art of Banksy, of which you can read more in Stealing Banksy? Keith Haring also struck up friendships with other rising artists of the early 1980’s, including Jean-Michel Basquiat, Futura 2000, Kenny Scharf along with Andy Warhol, who went on to feature in some artworks by Haring. In 1987 Keith Haring was diagnosed with AIDS, creating the Keith Haring Foundation in 1989 to support AIDS organisations with his imagery and funding. The Keith Haring Foundation was recently involved in a court case, read more about it in No Case against Keith Haring Foundation. Keith Haring died of AIDS- related complications on 16th February, 1990, aged just 31, leaving behind a legacy of amazing and iconic imagery that remains constantly popular.</p>
+   
+  </div>
+
+
+
+</body>
+</html>
