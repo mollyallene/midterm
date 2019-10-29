@@ -1,0 +1,144 @@
+<html>
+<head>
+	 <title>Home</title>
+	 <link href="style.css" rel="stylesheet" type="text/css">
+	 <script src="https://kit.fontawesome.com/668579f86e.js" crossorigin="anonymous"></script>
+   <style>
+
+    section {
+      float: left;
+      margin: auto;
+      padding: 0;
+      width: 79%;
+      min-height: 100%;
+      background-color: #719192;
+      margin-top: 65px;
+      color: white;
+    }
+  
+    h1, p {
+      font-family: Avenir Next, Lato;
+    }
+
+    section p {
+      margin-left: 17%;
+    }
+
+    section h1 {
+      margin-left: 35%;
+    }
+
+    aside {
+      float: right;
+      background-color: white;
+      margin-top: 70px;
+      width: 20%;
+      min-height: 100%;
+      display: block;
+
+    }
+
+    aside li a {
+      color: #000;
+      font-size: 12px;
+      text-decoration: none;
+      display: block;
+      padding: 0px;
+      font-family: Avenir, Georgia;
+      margin-left: 5%;
+    }
+
+    aside li {
+      list-style-type: none;
+    }
+
+    aside h1, aside p
+    {
+      margin-left: 5%;
+    }
+
+    .slideshow_container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+      margin-left: 16%;
+    }
+
+    .myslides {
+      display: none;
+      margin-top: 65px;
+    }
+   </style>
+</head>
+<body> 
+	
+  <nav class="navbar">
+  <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+      <i class="fas fa-bars"></i>
+  </label>
+  <a href="homepage.html" class="logo">Deck Pics</a>
+  <input type="checkbox" id="chkToggle"></input>
+  <ul class="main-nav">
+    <li><a href="homepage.html" class="nav-links">Home</a></li>
+    <li><a href="./About/about.html" class="nav-links">About</a></li>
+    <li><a href="./Shop/shop.html" class="nav-links">Shop</a></li>
+    <li><a href="./Artists/artists.html" class="nav-links">Artists</a></li>
+    <li><a href="./contact.html" class="nav-links">Contact</a></li>
+  </ul>
+</nav>
+
+
+  <section>
+
+    <div class = "slideshow_container">
+      <div class = "myslides">
+        <img src = "slide1.jpeg" style="width:80%;">
+      </div>
+      <div class = "myslides">
+        <img src = "slide2.jpeg" style="width:80%;">
+      </div>
+      <div class = "myslides">
+        <img src = "slide3.jpeg" style="width:80%;">
+      </div>
+    </div>
+    <br>
+    <h1>ART FOR SOCIAL IMPACT</h1>
+    <p>The Skateroom exists to bring art into your life while bringing brighter possibilities to the lives of all.</p>
+
+  </section>
+  <aside>
+    <br>
+    <h1>Shop</h1>
+    <p>We collaborate with contemporary artists to create editions of artwork on responsibly made skateboards.</p>
+    <br>
+    <li><a href="./Shop/shop.html">SEE ALL EDITIONS</a></li>
+    <br>
+    <br>
+    <h1>Featured Edition</h1>
+    <p>Migrants, Walking New York City, New York, USA, 2015
+     JR</p>
+    <img src="deck.png" style="width:60%; float: center;">
+    <br>
+    <li><a href="#">ADD TO CART</a></li>
+  </aside>
+</body>
+<script language="JavaScript">
+    var slideIndex = 1;
+    showSlides();
+    //used code from class and from w3schools
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("myslides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"; 
+        }
+        slideIndex++;
+        if (slideIndex > slides.length)
+        {
+          slideIndex = 1;
+        } 
+        slides[slideIndex-1].style.display = "block"; 
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+   </script>
+</html>
